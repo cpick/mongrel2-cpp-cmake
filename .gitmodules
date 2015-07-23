@@ -1,0 +1,3 @@
+[submodule "mongrel2-cpp"]
+	path = mongrel2-cpp
+	url = https://github.com/cpick/mongrel2-cpp.git
