@@ -232,3 +232,15 @@ set_property(TARGET ${M2PP_LIBRARIES}
         ${ZMQ_LIBRARIES}
         ${JSON_LIBRARIES}
     )
+
+# packaging
+
+set(M2PP_DEBIAN_PACKAGE_DEPENDS
+    "${ZMQ_PACKAGE}, ${JSON_PACKAGE}"
+    CACHE INTERNAL "m2pp debian package dependencies"
+    )
+
+set(M2PP_DEBIAN_PACKAGE_BUILD_DEPENDS
+    "cmake, ${ZMQ_DEV_PACKAGE}, ${JSON_DEV_PACKAGE}"
+    CACHE INTERNAL "m2pp debian build dependencies"
+    )
